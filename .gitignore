@@ -1,0 +1,21 @@
+# Build folders
+cmake-build-debug/
+
+# CMake
+CMakeCache.txt
+
+# Compiled files
+*.o
+*.elf
+*.bin
+*.hex
+
+# Logs
+*.log
+
+# CLion / JetBrains
+.idea/
+
+# OS junk
+.DS_Store
+Thumbs.db

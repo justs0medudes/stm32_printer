@@ -1,0 +1,8 @@
+//
+// Created by xiaosai on 3/25/2026.
+//
+
+#ifndef STM32_PRINTER_V0_1_PERIPH_LED_H
+#define STM32_PRINTER_V0_1_PERIPH_LED_H
+
+#endif //STM32_PRINTER_V0_1_PERIPH_LED_H

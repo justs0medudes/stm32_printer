@@ -5,6 +5,14 @@
 #ifndef STM32_PRINTER_V0_1_SYS_TIMER_H
 #define STM32_PRINTER_V0_1_SYS_TIMER_H
 
-void tim2_init(void);
+#ifdef __cplusplus
+extern "C" {
+#endif
+
+    void tim2_init(void);
+
+#ifdef __cplusplus
+}
+#endif
 
 #endif //STM32_PRINTER_V0_1_SYS_TIMER_H

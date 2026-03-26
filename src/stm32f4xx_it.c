@@ -191,6 +191,12 @@ void SysTick_Handler(void)
   /* USER CODE END SysTick_IRQn 1 */
 }
 
+extern TIM_HandleTypeDef htim2;
+
+void TIM2_IRQHandler(void) {
+  HAL_TIM_IRQHandler(&htim2);
+}
+
 void Error_Handler(void)
 {
   __disable_irq();

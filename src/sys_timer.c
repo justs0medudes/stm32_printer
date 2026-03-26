@@ -16,9 +16,9 @@ void tim2_init(void)
     TIM_MasterConfigTypeDef sMasterConfig = {0};
 
     htim2.Instance = TIM2;
-    htim2.Init.Prescaler = 839;
+    htim2.Init.Prescaler = 8399;
     htim2.Init.CounterMode = TIM_COUNTERMODE_UP;
-    htim2.Init.Period = 9;
+    htim2.Init.Period = 999;
     htim2.Init.ClockDivision = TIM_CLOCKDIVISION_DIV1;
     htim2.Init.AutoReloadPreload = TIM_AUTORELOAD_PRELOAD_DISABLE;
     if (HAL_TIM_Base_Init(&htim2) != HAL_OK)
@@ -36,4 +36,8 @@ void tim2_init(void)
     {
         Error_Handler();
     }
+    HAL_NVIC_SetPriority(TIM2_IRQn, 0, 0);
+    HAL_NVIC_EnableIRQ(TIM2_IRQn);
+
+    HAL_TIM_Base_Start_IT(&htim2);
 }
